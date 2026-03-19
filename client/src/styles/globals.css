@@ -1,12 +1,23 @@
 @import "tailwindcss";
 
-
-
-@theme inline {
+@theme {
+  /* Default Next.js variables */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* ProcrastiNO Brand Colors */
+  --color-brandBg: #062325;
+  --color-brandCream: #E9E6DD;
+  --color-brandPink: #F87DC7;
+  --color-brandYellow: #FBD954;
+  --color-brandNeon: #BFFB11;
+  --color-brandPurple: #9B90F9;
+  --color-brandLavender: #9894DE;
+  --color-graysoft: #717871;
+  --color-brandRust: #8F391C;
+  --color-brandSand: #AF995B;
 }
 
 @media (prefers-color-scheme: dark) {
