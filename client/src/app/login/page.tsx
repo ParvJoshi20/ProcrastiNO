@@ -55,7 +55,7 @@ export default function LoginPage() {
             <motion.div
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute w-32 h-32 lg:w-48 lg:h-48 bg-brandNeon/10 rounded-full blur-[40px]"
+              className="absolute w-32 h-32 lg:w-48 lg:h-48 bg-brandNeon/10 rounded-full blur-2xl"
             />
             <Zap className="w-16 h-16 lg:w-24 lg:h-24 text-brandNeon" />
           </motion.div>
@@ -78,16 +78,16 @@ export default function LoginPage() {
             className="w-full"
           >
             {/* Massive Toggle Buttons */}
-            <div className="flex w-full bg-brandBg lg:bg-black/30 rounded-[2rem] p-3 mb-12 border border-brandCream/10 shadow-inner">
+            <div className="flex w-full bg-brandBg lg:bg-black/30 rounded-4xl p-3 mb-12 border border-brandCream/10 shadow-inner">
               <button 
                 onClick={() => { setIsNewUser(false); setUseFailsafe(false); }} 
-                className={`flex-1 py-5 lg:py-6 text-xl lg:text-2xl font-black tracking-tight rounded-[1.5rem] transition-all duration-300 ${!isNewUser ? 'bg-brandCream text-brandBg shadow-xl scale-[1.02]' : 'text-brandCream/40 hover:text-brandCream/70 hover:bg-white/5'}`}
+                className={`flex-1 py-5 lg:py-6 text-xl lg:text-2xl font-black tracking-tight rounded-3xl transition-all duration-300 ${!isNewUser ? 'bg-brandCream text-brandBg shadow-xl scale-[1.02]' : 'text-brandCream/40 hover:text-brandCream/70 hover:bg-white/5'}`}
               >
                 Returning
               </button>
               <button 
                 onClick={() => setIsNewUser(true)} 
-                className={`flex-1 py-5 lg:py-6 text-xl lg:text-2xl font-black tracking-tight rounded-[1.5rem] transition-all duration-300 ${isNewUser ? 'bg-brandNeon text-brandBg shadow-xl scale-[1.02]' : 'text-brandCream/40 hover:text-brandCream/70 hover:bg-white/5'}`}
+                className={`flex-1 py-5 lg:py-6 text-xl lg:text-2xl font-black tracking-tight rounded-3xl transition-all duration-300 ${isNewUser ? 'bg-brandNeon text-brandBg shadow-xl scale-[1.02]' : 'text-brandCream/40 hover:text-brandCream/70 hover:bg-white/5'}`}
               >
                 New Identity
               </button>
@@ -105,7 +105,7 @@ export default function LoginPage() {
             </div>
 
             {/* Dynamic Auth Forms */}
-            <div className="min-h-[300px] flex flex-col justify-center">
+            <div className="min-h-75 flex flex-col justify-center">
               <AnimatePresence mode="wait">
                 {isNewUser ? (
                   /* ---------------- NEW USER FLOW (OAUTH ONLY) ---------------- */
@@ -199,7 +199,7 @@ export default function LoginPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-brandBg lg:bg-black/40 border border-brandPurple/20 rounded-[2rem] p-8 flex flex-col shadow-2xl relative overflow-hidden group"
+            className="bg-brandBg lg:bg-black/40 border border-brandPurple/20 rounded-4xl p-8 flex flex-col shadow-2xl relative overflow-hidden group"
           >
             {/* Decorative background gradient */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-brandPurple/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/4 group-hover:bg-brandPurple/10 transition-colors duration-700" />
