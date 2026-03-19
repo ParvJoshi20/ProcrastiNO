@@ -1,5 +1,3 @@
-Here is a draft for your README.md that captures the unapologetic, high-energy, and discipline-focused vibe of the ProcrastiNO website.
-
 ⚡ PROCRASTINO
 The ultimate anti-procrastination system. Break down overwhelming goals and force yourself into deep work.
 
