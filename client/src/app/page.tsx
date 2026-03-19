@@ -4,6 +4,7 @@ import Footer from "@/components/landing/Footer";
 import Hero from "@/components/landing/Hero";
 import Marquee from "@/components/landing/Marquee";
 import Methodology from "@/components/landing/Methodology";
+import Navbar from "@/components/landing/Navbar";
 import Stats from "@/components/landing/Stats";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
           scrollbar-color: #D4FF3F #020D0A;
         }
       `}} />
+      <Navbar />
       <Hero />
       <Marquee />
       <FeatureStack />

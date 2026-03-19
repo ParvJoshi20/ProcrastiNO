@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import { Fredoka } from "next/font/google";
 import type { Metadata } from "next";
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "@/components/landing/Navbar";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -21,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fredoka.className} bg-brandBg text-brandCream min-h-screen`}>
-        <Navbar />
         {children}
       </body>
     </html>
